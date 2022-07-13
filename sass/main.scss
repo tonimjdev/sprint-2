@@ -4,3 +4,24 @@ $secondary:  #FA5959;
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+.fs-7 {
+    font-size: 0.9rem;
+}
+.blue-from-right {
+    width: 550px;
+    height: 300px;
+    background-color: #5265E1;
+    position: absolute;
+    right:3em;
+    top: 16em;
+    border-bottom-left-radius: 10em;
+    z-index: -1;
+}
+@media (max-width: 1400px) {
+    .blue-from-right {
+        transform: scale(0.8);
+        right:2em;
+    }
+}

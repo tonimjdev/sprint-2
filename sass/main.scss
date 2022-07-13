@@ -15,13 +15,21 @@ $secondary:  #FA5959;
     background-color: #5265E1;
     position: absolute;
     right:3em;
-    top: 16em;
+    top: 18em;
     border-bottom-left-radius: 10em;
     z-index: -1;
 }
 @media (max-width: 1400px) {
     .blue-from-right {
         transform: scale(0.8);
-        right:2em;
+        right:1.2em;
+        top:15em;
+    }
+}
+@media (max-width: 1200px) {
+    .blue-from-right {
+        transform: scale(0.7);
+        right:0.4em;
+        top:11em;
     }
 }

@@ -1,35 +1,66 @@
 // custom variables
-$primary: #5265E1;
-$secondary:  #FA5959;
+$primary: #5265e1;
+$secondary: #fa5959;
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-
+// ajustem un fs-7 per size una mica més petit que el mínim a Bootstrap
 .fs-7 {
-    font-size: 0.9rem;
+ font-size: 0.9rem;
 }
+
+// element blau amb responsive
 .blue-from-right {
-    width: 550px;
-    height: 300px;
-    background-color: #5265E1;
-    position: absolute;
-    right:3em;
-    top: 18em;
-    border-bottom-left-radius: 10em;
-    z-index: -1;
+ width: 550px;
+ height: 300px;
+ background-color: #5265e1;
+ position: absolute;
+ right: 0;
+ top: 18em;
+ border-bottom-left-radius: 10em;
+ z-index: -1;
+}
+.blue-from-left {
+ width: 550px;
+ height: 300px;
+ background-color: #5265e1;
+ position: absolute;
+ left: 0;
+ top: 67em;
+ border-bottom-right-radius: 10em;
+ z-index: -1;
 }
 @media (max-width: 1400px) {
-    .blue-from-right {
-        transform: scale(0.8);
-        right:1.2em;
-        top:15em;
-    }
+ .blue-from-right {
+  transform: scale(0.8);
+  right: -3.5em;
+  top: 15em;
+ }
+ .blue-from-left {
+  transform: scale(0.8);
+  left: -3.5em;
+  top: 64em;
+ }
 }
 @media (max-width: 1200px) {
-    .blue-from-right {
-        transform: scale(0.7);
-        right:0.4em;
-        top:11em;
-    }
+ .blue-from-right {
+  transform: scale(0.7);
+  right: -5em;
+  top: 12em;
+ }
+ .blue-from-left {
+  transform: scale(0.7);
+  left: -5em;
+  top: 57em;
+ }
+}
+
+// cards width (treiem styles de l'html per codi més net)
+.card {
+ max-width: 18rem;
+ border-radius: 20px;
+ img {
+  width: 100px;
+ }
 }

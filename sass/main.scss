@@ -1,6 +1,9 @@
 // custom variables
 $primary: #5265e1;
 $secondary: #fa5959;
+$info: rgb(149, 149, 149);
+$nav-pills-link-active-color: #000;
+$nav-pills-link-active-bg: none;
 
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -56,9 +59,17 @@ $secondary: #fa5959;
  }
 }
 
+// tab active custom
+.nav-link.active,
+  .show > .nav-link {
+    border-bottom: 3px solid rgb(251,91,97);
+  }
+
+
 // cards width (treiem styles de l'html per codi més net)
 .card {
  max-width: 18rem;
+ height: 360px;
  border-radius: 20px;
  .card-img-top {
   width: 100px;
@@ -66,11 +77,15 @@ $secondary: #fa5959;
   object-fit:contain;
  }
 }
-
 // posicionem Cards segons model amb nth-child
 .cards-container div:nth-child(2) {
     margin-top: 2em;
 }
 .cards-container div:nth-child(3) {
     margin-top: 4em;
+}
+
+// reduim ample caixa acordio
+.accordion {
+    max-width: 700px;
 }

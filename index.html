@@ -72,20 +72,19 @@
    <!-- Menu -->
    <div class="row my-5">
     <div class="col">
-     <ul class="nav justify-content-center" id="myTab" role="tablist">
-      <li class="nav-item px-2 active" role="presentation">
-       <a data-bs-toggle="tab" class="nav-link fw-bold link-dark" aria-current="page" href="#simple"
+     <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item px-2" role="presentation">
+       <a data-bs-toggle="tab" class="nav-link active link-info" aria-current="page" href="#simple"
         >Simple Bookmarking</a
        >
       </li>
       <li class="nav-item px2" role="presentation">
-       <a data-bs-toggle="tab" class="nav-link fw-bold link-dark" href="#speedy">Speedy Searching</a>
+       <a data-bs-toggle="tab" class="nav-link link-info" href="#speedy">Speedy Searching</a>
       </li>
       <li class="nav-item px-2" role="presentation">
-       <a data-bs-toggle="tab" class="nav-link fw-bold link-dark" href="#easy">Easy Sharing</a>
+       <a data-bs-toggle="tab" class="nav-link link-info" href="#easy">Easy Sharing</a>
       </li>
      </ul>
-     <hr />
 
      <!-- Contingut -->
      <div class="tab-content">
@@ -153,44 +152,110 @@
    </div>
 
    <!-- CARDS -->
-   <div class="row mb-5 cards-container">
+   <div class="row mb-5 d-flex justify-content-center gap-5 cards-container">
     <!-- CARD 1 -->
-    <div class="col-4">
-     <div class="card d-flex align-items-center py-4 border-0 shadow-sm">
+  
+     <div class="card d-flex align-items-center py-4 border-0 shadow">
       <img src="./images/logo-chrome.svg" class="card-img-top" alt="chrome logo" />
       <div class="card-body text-center">
        <h5 class="card-title fw-bold">Add to Chrome</h5>
-       <p class="card-text text-black-50 pb-3">Minimum version 62</p>
+       <p class="card-text text-black-50">Minimum version 62</p>
        <img src="./images/bg-dots.svg" class="img-fluid" alt="bg dots/">
-       <a href="#" class="btn btn-primary fs-7 mt-3 px-5 py-2">Add & Install Extension</a>
+       <a href="#" class="btn btn-primary fs-7 mt-3 px-4 py-2">Add & Install Extension</a>
       </div>
-     </div>
+
     </div>
     <!-- CARD 2 -->
-    <div class="col-4 card2">
-     <div class="card d-flex align-items-center py-4 border-0 shadow-sm">
+
+     <div class="card d-flex align-items-center py-4 border-0 shadow">
       <img src="./images/logo-firefox.svg" class="card-img-top" alt="firefox logo" />
       <div class="card-body text-center">
        <h5 class="card-title fw-bold">Add to Firefox</h5>
-       <p class="card-text text-black-50 pb-3">Minimum version 55</p>
+       <p class="card-text text-black-50">Minimum version 55</p>
        <img src="./images/bg-dots.svg" class="img-fluid" alt="bg dots/">
-       <a href="#" class="btn btn-primary fs-7 mt-3 px-5 py-2">Add & Install Extension</a>
+       <a href="#" class="btn btn-primary fs-7 mt-3 px-4 py-2">Add & Install Extension</a>
       </div>
-     </div>
+
     </div>
-    <!-- CARD 2 -->
-    <div class="col-4 card3">
-     <div class="card d-flex align-items-center py-4 border-0 shadow-sm">
+    <!-- CARD 3 -->
+
+     <div class="card d-flex align-items-center py-4 border-0 shadow">
       <img src="./images/logo-opera.svg" class="card-img-top" alt="opera logo" />
       <div class="card-body text-center">
        <h5 class="card-title fw-bold">Add to Opera</h5>
-       <p class="card-text text-black-50 pb-3">Minimum version 46</p>
+       <p class="card-text text-black-50">Minimum version 46</p>
        <img src="./images/bg-dots.svg" class="img-fluid" alt="bg dots/">
-       <a href="#" class="btn btn-primary fs-7 mt-3 px-5 py-2">Add & Install Extension</a>
+       <a href="#" class="btn btn-primary fs-7 mt-3 px-4 py-2">Add & Install Extension</a>
       </div>
      </div>
+
+   </div>
+
+   <!-- FAQS -->
+   <div class="row text-center mb-4">
+    <h2 class="fw-bold mb-4">Frequently Asked Questions</h2>
+    <p class="text-black-50">
+     Here are some of our FAQs. If you have any other questions <br>
+     you'd like answered please feel free to email us.
+    </p>
+    <!-- Acordeón -->
+    <div class="accordion accordion-flush my-4 m-auto" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header border-top" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              What is a Bookmark?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How can I request a new browser?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Is there a mobile app?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header border-bottom" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              What about other Chromium browsers?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+<div class="row mt-3">
+    <div class="col-12">
+      <button type="button" class="btn btn-primary text-white m-auto px-4 py-2 fs-7 shadow-sm">More Info</button>
+    </div>
     </div>
    </div>
+
   </div>
  </body>
 </html>

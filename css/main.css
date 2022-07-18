@@ -10329,7 +10329,18 @@ body {
   .blue-from-left {
     transform: scale(1.3);
     left: -9em;
-    top: 80em;
+    top: 82em;
+  }
+  #myTab {
+    border-top: 1px solid rgb(221, 221, 221);
+  }
+  #myTab li {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .linea {
+    border-top: 1px solid rgb(221, 221, 221);
   }
 }
 @media (max-width: 767px) {
@@ -10383,4 +10394,36 @@ body {
 }
 .accordion {
   max-width: 700px;
+}
+
+#buttonPrimary:hover {
+  color: #5265e1 !important;
+  background-color: #fff;
+}
+
+#buttonSecondary:hover {
+  color: #fa5959 !important;
+  background-color: #fff;
+}
+
+#buttonInfo:hover {
+  color: rgb(149, 149, 149) !important;
+  background-color: #fff;
+  border: 1px solid rgb(149, 149, 149);
+}
+
+a:hover {
+  color: #fa5959 !important;
+}
+
+.accordion-button:hover {
+  color: #fa5959 !important;
+}
+
+#socialIcons:hover {
+  filter: invert(50%) sepia(67%) saturate(4668%) hue-rotate(334deg) brightness(116%) contrast(96%);
+}
+
+.navbar-toggler {
+  border: 0px;
 }/*# sourceMappingURL=main.css.map */

@@ -13,7 +13,7 @@ $nav-pills-link-active-bg: none;
  font-size: 0.9rem;
 }
 body {
-  margin-top: 5em;
+ margin-top: 5em;
 }
 
 // element blau amb responsive
@@ -101,10 +101,9 @@ body {
 
 // tab active custom
 .nav-link.active,
-  .show > .nav-link {
-    border-bottom: 3px solid rgb(251,91,97);
-  }
-
+.show > .nav-link {
+ border-bottom: 3px solid rgb(251, 91, 97);
+}
 
 // cards width (treiem styles de l'html per codi més net)
 .card {
@@ -114,20 +113,20 @@ body {
  .card-img-top {
   width: 100px;
   height: 100px;
-  object-fit:contain;
+  object-fit: contain;
  }
 }
 // posicionem Cards segons model amb nth-child de manera responsive
 @media (min-width: 1200px) {
-.cards-container div:nth-child(2) {
-    margin-top: 2em;
-}
-.cards-container div:nth-child(3) {
-    margin-top: 4em;
-}
+ .cards-container div:nth-child(2) {
+  margin-top: 2em;
+ }
+ .cards-container div:nth-child(3) {
+  margin-top: 4em;
+ }
 }
 
 // reduim ample caixa acordio
 .accordion {
-    max-width: 700px;
+ max-width: 700px;
 }

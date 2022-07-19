@@ -10396,6 +10396,10 @@ body {
   max-width: 700px;
 }
 
+.accordion-button:not(.collapsed)::after {
+  filter: invert(36%) sepia(49%) saturate(3329%) hue-rotate(339deg) brightness(82%) contrast(92%);
+}
+
 #buttonPrimary:hover {
   color: #5265e1 !important;
   background-color: #fff;

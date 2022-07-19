@@ -142,6 +142,11 @@ body {
   max-width: 700px;
 }
 
+// donem color vermell al icone svg del acordio desplegat
+.accordion-button:not(.collapsed)::after {
+  filter: invert(36%) sepia(49%) saturate(3329%) hue-rotate(339deg) brightness(82%) contrast(92%);
+}
+
 //hover botons
 #buttonPrimary:hover {
   color: $primary !important;
@@ -165,7 +170,7 @@ a:hover {
 #socialIcons:hover {
   filter: invert(50%) sepia(67%) saturate(4668%) hue-rotate(334deg) brightness(116%) contrast(96%);
 }
-
+// eliminem marc menu hamburguesa
 .navbar-toggler {
   border: 0px;
 }

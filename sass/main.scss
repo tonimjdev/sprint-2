@@ -8,12 +8,20 @@ $nav-pills-link-active-bg: none;
 // import bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-// ajustem un fs-7 per size una mica més petit que el mínim a Bootstrap
+// ajustem size mes petits que el mínim a Bootstrap
 .fs-7 {
   font-size: 0.9rem;
 }
+.fs-8 {
+  font-size: 0.8rem;
+}
 body {
   margin-top: 5em;
+}
+
+// letter-spacing per elements menu
+.navbar .buttonLogin {
+  letter-spacing: 0.12em;
 }
 
 // element blau amb responsive
@@ -61,6 +69,8 @@ body {
     top: 57em;
   }
 }
+
+// Responsive Mòvil/Tablet
 @media (max-width: 991px) {
   .blue-from-right {
     transform: scale(1.3);
@@ -72,7 +82,39 @@ body {
     left: -9em;
     top: 82em;
   }
-  // Menu Tab disseny responsive mobil/tablet
+
+  // Navbar disseny responsive mòvil/tablet
+  .navbar {
+    background-color: transparent !important;
+  }
+  #navbarSupportedContent {
+    background-color: rgba(22, 33, 69, 0.94);
+    text-align: center;
+    padding: 0 1em 1em 1em;
+    margin-top: 1em;
+    ul li a {
+      color: #fff !important;
+      border-top: 1px solid rgba(255, 255, 255, 0.433);
+      padding: 1.4em 0;
+      font-size: 1.1em;
+      letter-spacing: 0.18em;
+    }
+    ul li:nth-child(3) a {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.433) !important;
+      margin-bottom: 1em;
+    }
+    ul li button {
+      width: 95%;
+      color: #fff;
+      border: 2px solid #fff;
+      background-color: transparent;
+      padding: 0.8em 0;
+      font-size: 1.1em;
+      letter-spacing: 0.18em;
+    }
+  }
+
+  // Menu Tab disseny responsive mòvil/tablet
   #myTab {
     border-top: 1px solid rgb(221, 221, 221);
   }

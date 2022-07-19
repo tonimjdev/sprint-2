@@ -10,162 +10,162 @@ $nav-pills-link-active-bg: none;
 
 // ajustem un fs-7 per size una mica més petit que el mínim a Bootstrap
 .fs-7 {
- font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 body {
- margin-top: 5em;
+  margin-top: 5em;
 }
 
 // element blau amb responsive
 .blue-from-right {
- width: 550px;
- height: 300px;
- background-color: #5265e1;
- position: absolute;
- right: 0;
- top: 18em;
- border-bottom-left-radius: 10em;
- z-index: -1;
+  width: 550px;
+  height: 300px;
+  background-color: #5265e1;
+  position: absolute;
+  right: 0;
+  top: 18em;
+  border-bottom-left-radius: 10em;
+  z-index: -1;
 }
 .blue-from-left {
- width: 550px;
- height: 300px;
- background-color: #5265e1;
- position: absolute;
- left: 0;
- top: 67em;
- border-bottom-right-radius: 10em;
- z-index: -1;
+  width: 550px;
+  height: 300px;
+  background-color: #5265e1;
+  position: absolute;
+  left: 0;
+  top: 67em;
+  border-bottom-right-radius: 10em;
+  z-index: -1;
 }
 @media (max-width: 1400px) {
- .blue-from-right {
-  transform: scale(0.8);
-  right: -3.5em;
-  top: 15em;
- }
- .blue-from-left {
-  transform: scale(0.8);
-  left: -3.5em;
-  top: 64em;
- }
+  .blue-from-right {
+    transform: scale(0.8);
+    right: -3.5em;
+    top: 15em;
+  }
+  .blue-from-left {
+    transform: scale(0.8);
+    left: -3.5em;
+    top: 64em;
+  }
 }
 @media (max-width: 1200px) {
- .blue-from-right {
-  transform: scale(0.7);
-  right: -5em;
-  top: 12em;
- }
- .blue-from-left {
-  transform: scale(0.7);
-  left: -5em;
-  top: 57em;
- }
+  .blue-from-right {
+    transform: scale(0.7);
+    right: -5em;
+    top: 12em;
+  }
+  .blue-from-left {
+    transform: scale(0.7);
+    left: -5em;
+    top: 57em;
+  }
 }
 @media (max-width: 991px) {
- .blue-from-right {
-  transform: scale(1.3);
-  right: 0;
-  top: 16em;
- }
- .blue-from-left {
-  transform: scale(1.3);
-  left: -9em;
-  top: 82em;
- }
- // Menu Tab disseny responsive mobil/tablet
- #myTab {
+  .blue-from-right {
+    transform: scale(1.3);
+    right: 0;
+    top: 16em;
+  }
+  .blue-from-left {
+    transform: scale(1.3);
+    left: -9em;
+    top: 82em;
+  }
+  // Menu Tab disseny responsive mobil/tablet
+  #myTab {
     border-top: 1px solid rgb(221, 221, 221);
- }
- #myTab li {
+  }
+  #myTab li {
     width: 200px;
-   margin: 0 auto;
-   text-align: center;
- }
- .linea {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .linea {
     border-top: 1px solid rgb(221, 221, 221);
- }
+  }
 }
 @media (max-width: 767px) {
- .blue-from-right {
-  transform: scale(0.8);
-  right: -3.5em;
-  top: 13em;
- }
- .blue-from-left {
-  transform: scale(0.8);
-  left: -3.5em;
-  top: 78em;
- }
+  .blue-from-right {
+    transform: scale(0.8);
+    right: -3.5em;
+    top: 13em;
+  }
+  .blue-from-left {
+    transform: scale(0.8);
+    left: -3.5em;
+    top: 78em;
+  }
 }
 @media (max-width: 576px) {
- .blue-from-right {
-  transform: scale(0.6);
-  right: -9em;
-  top: 12.5em;
- }
- .blue-from-left {
-  transform: scale(0.6);
-  left: -9em;
-  top: 75em;
- }
+  .blue-from-right {
+    transform: scale(0.6);
+    right: -9em;
+    top: 12.5em;
+  }
+  .blue-from-left {
+    transform: scale(0.6);
+    left: -9em;
+    top: 75em;
+  }
 }
 
 // tab active custom
 .nav-link.active,
 .show > .nav-link {
- border-bottom: 3px solid rgb(251, 91, 97);
+  border-bottom: 3px solid rgb(251, 91, 97);
 }
 
 // cards width (treiem styles de l'html per codi més net)
 .card {
- max-width: 18rem;
- height: 360px;
- border-radius: 20px;
- .card-img-top {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
- }
+  max-width: 18rem;
+  height: 360px;
+  border-radius: 20px;
+  .card-img-top {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
 }
 // posicionem Cards segons model amb nth-child de manera responsive
 @media (min-width: 1200px) {
- .cards-container div:nth-child(2) {
-  margin-top: 2em;
- }
- .cards-container div:nth-child(3) {
-  margin-top: 4em;
- }
+  .cards-container div:nth-child(2) {
+    margin-top: 2em;
+  }
+  .cards-container div:nth-child(3) {
+    margin-top: 4em;
+  }
 }
 
 // reduim ample caixa acordio
 .accordion {
- max-width: 700px;
+  max-width: 700px;
 }
 
 //hover botons
 #buttonPrimary:hover {
-    color: $primary !important;
-    background-color: #fff;
+  color: $primary !important;
+  background-color: #fff;
 }
 #buttonSecondary:hover {
-    color: $secondary !important;
-    background-color: #fff;
+  color: $secondary !important;
+  background-color: #fff;
 }
 #buttonInfo:hover {
-    color: $info !important;
-    background-color: #fff;
-    border: 1px solid $info;
+  color: $info !important;
+  background-color: #fff;
+  border: 1px solid $info;
 }
 a:hover {
-    color: $secondary !important;
+  color: $secondary !important;
 }
 .accordion-button:hover {
-    color: $secondary !important;
+  color: $secondary !important;
 }
 #socialIcons:hover {
-    filter: invert(50%) sepia(67%) saturate(4668%) hue-rotate(334deg) brightness(116%) contrast(96%);
+  filter: invert(50%) sepia(67%) saturate(4668%) hue-rotate(334deg) brightness(116%) contrast(96%);
 }
 
 .navbar-toggler {
-    border: 0px;
+  border: 0px;
 }

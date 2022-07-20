@@ -10339,11 +10339,8 @@ body {
     left: -9em;
     top: 82em;
   }
-  .navbar {
-    background-color: transparent !important;
-  }
   #navbarSupportedContent {
-    background-color: rgba(22, 33, 69, 0.94);
+    background-color: rgb(57, 64, 84);
     text-align: center;
     padding: 0 1em 1em 1em;
     margin-top: 1em;

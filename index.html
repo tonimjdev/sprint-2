@@ -12,10 +12,10 @@
     <title>ANGULAR - Sprint 2 (Toni Machado)</title>
   </head>
   <body>
-    <div class="container align-items-center ps-3">
+    <div class="container container-xl align-items-center">
       <!-- NAVBAR -->
-      <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-white py-3">
-        <div class="container-sm ps-lg-4 align-items-center">
+      <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-white px-lg-5">
+        <div class="container-sm align-items-center">
           <a class="navbar-brand" href="#">
             <img src="./images/logo-bookmark.svg" alt="logo bookmark" />
           </a>
@@ -59,28 +59,26 @@
       </nav>
 
       <!-- CONTINGUT PRINCIPAL -->
-      <section class="container container-xl pt-5">
-        <div class="row mb-5">
-          <div class="col-lg-6 order-2 order-lg-1 py-5 text-center text-lg-start">
-            <h1 class="fw-bold">
-              A Simple Bookmark<br />
-              Manager
-            </h1>
-            <p class="text-black-50">
-              A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites
-              load instantly. Try it for free.
-            </p>
-            <button type="button" id="buttonPrimary" class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm">
-              Get it on Chrome
-            </button>
-            <button type="button" id="buttonInfo" class="btn btn-light px-4 py-2 fs-7 fw-bold text-muted shadow-sm">
-              Get it on Firefox
-            </button>
-          </div>
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="./images/illustration-hero.svg" class="img-fluid" alt="illustration hero" />
-            <div class="blue-from-right"></div>
-          </div>
+      <section class="row mb-5 pt-5">
+        <div class="col-lg-6 order-2 order-lg-1 py-5 text-center text-lg-start">
+          <h1 class="fw-bold">
+            A Simple Bookmark<br />
+            Manager
+          </h1>
+          <p class="text-black-50">
+            A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites
+            load instantly. Try it for free.
+          </p>
+          <button type="button" id="buttonPrimary" class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm">
+            Get it on Chrome
+          </button>
+          <button type="button" id="buttonInfo" class="btn btn-light px-4 py-2 fs-7 fw-bold text-muted shadow-sm">
+            Get it on Firefox
+          </button>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="./images/illustration-hero.svg" class="img-fluid" alt="illustration hero" />
+          <div class="blue-from-right"></div>
         </div>
       </section>
 
@@ -96,109 +94,107 @@
 
       <!-- TABS -->
       <!-- Menu -->
-      <section class="container-xl">
-        <div class="row my-4 my-lg-5">
-          <div class="col">
-            <ul
-              class="nav nav-pills justify-content-center flex-column flex-lg-row text-center border-bottom"
-              id="myTab"
-              role="tablist"
-            >
-              <li class="nav-item px-2" role="presentation">
-                <a data-bs-toggle="tab" class="nav-link active link-info" aria-current="page" href="#simple"
-                  >Simple Bookmarking</a
-                >
-              </li>
-              <div class="linea"></div>
-              <li class="nav-item px-2" role="presentation">
-                <a data-bs-toggle="tab" class="nav-link link-info" href="#speedy">Speedy Searching</a>
-              </li>
-              <div class="linea"></div>
-              <li class="nav-item px-2" role="presentation">
-                <a data-bs-toggle="tab" class="nav-link link-info" href="#easy">Easy Sharing</a>
-              </li>
-            </ul>
+      <section class="row my-4 my-lg-5">
+        <div class="col">
+          <ul
+            class="nav nav-pills justify-content-center flex-column flex-lg-row text-center border-bottom"
+            id="myTab"
+            role="tablist"
+          >
+            <li class="nav-item px-2" role="presentation">
+              <a data-bs-toggle="tab" class="nav-link active link-info" aria-current="page" href="#simple"
+                >Simple Bookmarking</a
+              >
+            </li>
+            <div class="linea"></div>
+            <li class="nav-item px-2" role="presentation">
+              <a data-bs-toggle="tab" class="nav-link link-info" href="#speedy">Speedy Searching</a>
+            </li>
+            <div class="linea"></div>
+            <li class="nav-item px-2" role="presentation">
+              <a data-bs-toggle="tab" class="nav-link link-info" href="#easy">Easy Sharing</a>
+            </li>
+          </ul>
 
-            <!-- Contingut -->
-            <div class="tab-content">
-              <div id="simple" class="tab-pane fade show active" role="tabpanel">
-                <div class="row">
-                  <div class="col-lg-6 py-5 ps-4">
-                    <img
-                      src="./images/illustration-features-tab-1.svg"
-                      class="img-fluid ps-lg-4"
-                      alt="ilustration features 1"
-                    />
-                    <div class="blue-from-left"></div>
-                  </div>
-                  <div class="col-lg-6 p-5 mt-lg-5 mt-4 text-center text-lg-start">
-                    <h2 class="fw-bold">Bookmark in one click</h2>
-                    <p class="text-black-50">
-                      Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
-                      control over how you manage your favorite sites.
-                    </p>
-                    <button
-                      type="button"
-                      id="buttonPrimary"
-                      class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm"
-                    >
-                      More Info
-                    </button>
-                  </div>
+          <!-- Contingut -->
+          <div class="tab-content">
+            <div id="simple" class="tab-pane fade show active" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-6 py-5 ps-4">
+                  <img
+                    src="./images/illustration-features-tab-1.svg"
+                    class="img-fluid ps-lg-4"
+                    alt="ilustration features 1"
+                  />
+                  <div class="blue-from-left"></div>
+                </div>
+                <div class="col-lg-6 p-5 mt-lg-5 mt-4 text-center text-lg-start">
+                  <h2 class="fw-bold">Bookmark in one click</h2>
+                  <p class="text-black-50">
+                    Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete
+                    control over how you manage your favorite sites.
+                  </p>
+                  <button
+                    type="button"
+                    id="buttonPrimary"
+                    class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm"
+                  >
+                    More Info
+                  </button>
                 </div>
               </div>
+            </div>
 
-              <div id="speedy" class="tab-pane fade" role="tabpanel">
-                <div class="row">
-                  <div class="col-lg-6 pt-3 py-lg-5 ps-4">
-                    <img
-                      src="./images/illustration-features-tab-2.svg"
-                      class="img-fluid ps-lg-5"
-                      alt="ilustration features 2"
-                    />
-                    <div class="blue-from-left"></div>
-                  </div>
-                  <div class="col-lg-6 p-5 mt-lg-5 mt-0 text-center text-lg-start">
-                    <h2 class="fw-bold">Intelligent search</h2>
-                    <p class="text-black-50">
-                      Our powerful search feature will help you find saved sites in no time at all. No need to trawl
-                      through all of your bookmarks.
-                    </p>
-                    <button
-                      type="button"
-                      id="buttonPrimary"
-                      class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm"
-                    >
-                      More Info
-                    </button>
-                  </div>
+            <div id="speedy" class="tab-pane fade" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-6 pt-3 py-lg-5 ps-4">
+                  <img
+                    src="./images/illustration-features-tab-2.svg"
+                    class="img-fluid ps-lg-5"
+                    alt="ilustration features 2"
+                  />
+                  <div class="blue-from-left"></div>
+                </div>
+                <div class="col-lg-6 p-5 mt-lg-5 mt-0 text-center text-lg-start">
+                  <h2 class="fw-bold">Intelligent search</h2>
+                  <p class="text-black-50">
+                    Our powerful search feature will help you find saved sites in no time at all. No need to trawl
+                    through all of your bookmarks.
+                  </p>
+                  <button
+                    type="button"
+                    id="buttonPrimary"
+                    class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm"
+                  >
+                    More Info
+                  </button>
                 </div>
               </div>
+            </div>
 
-              <div id="easy" class="tab-pane fade" role="tabpanel">
-                <div class="row">
-                  <div class="col-lg-6 pt-3 py-lg-5 ps-4">
-                    <img
-                      src="./images/illustration-features-tab-3.svg"
-                      class="img-fluid ps-lg-5"
-                      alt="ilustration features 3"
-                    />
-                    <div class="blue-from-left"></div>
-                  </div>
-                  <div class="col-lg-6 p-5 mt-lg-5 mt-4 text-center text-lg-start">
-                    <h2 class="fw-bold">Share your bookmarks</h2>
-                    <p class="text-black-50">
-                      Easily share your bookmarks and collections with others. Create a shareable link that you can send
-                      at the click button.
-                    </p>
-                    <button
-                      type="button"
-                      id="buttonPrimary"
-                      class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm"
-                    >
-                      More Info
-                    </button>
-                  </div>
+            <div id="easy" class="tab-pane fade" role="tabpanel">
+              <div class="row">
+                <div class="col-lg-6 pt-3 py-lg-5 ps-4">
+                  <img
+                    src="./images/illustration-features-tab-3.svg"
+                    class="img-fluid ps-lg-5"
+                    alt="ilustration features 3"
+                  />
+                  <div class="blue-from-left"></div>
+                </div>
+                <div class="col-lg-6 p-5 mt-lg-5 mt-4 text-center text-lg-start">
+                  <h2 class="fw-bold">Share your bookmarks</h2>
+                  <p class="text-black-50">
+                    Easily share your bookmarks and collections with others. Create a shareable link that you can send
+                    at the click button.
+                  </p>
+                  <button
+                    type="button"
+                    id="buttonPrimary"
+                    class="btn btn-primary text-white px-4 py-2 me-2 fs-7 shadow-sm"
+                  >
+                    More Info
+                  </button>
                 </div>
               </div>
             </div>
@@ -238,8 +234,8 @@
             <a href="#" id="buttonPrimary" class="btn btn-primary fs-7 mt-3 px-4 py-2">Add & Install Extension</a>
           </div>
         </div>
-        <!-- CARD 3 -->
 
+        <!-- CARD 3 -->
         <div class="card d-flex align-items-center py-4 border-0 shadow">
           <img src="./images/logo-opera.svg" class="card-img-top" alt="opera logo" />
           <div class="card-body text-center">
@@ -418,7 +414,7 @@
         </div>
       </div>
       <!-- Pie -->
-      <div class="container-fluid bg-dark ps-3">
+      <div class="bg-dark ps-3">
         <nav class="navbar navbar-expand-lg flex-column flex-lg-row justify-content-center gap-lg-0 gap-4">
           <div class="col-lg-2">
             <ul class="navbar-nav">
